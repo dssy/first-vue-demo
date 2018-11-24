@@ -12,7 +12,7 @@ const config = {
         filename: 'bundle.js',//输出文件地址及名称
         path: path.join(__dirname, 'dist')
     },
-    mode: 'development',//webpack编译模式（开发环境为development，生产环境为production）
+    mode: isDev ? 'development' : 'production',//webpack编译模式（开发环境为development，生产环境为production）
     plugins: [//扩展插件，扩展webpack的功能
         new VueLoaderPlugin(),
         new HTMLPlugin(),
