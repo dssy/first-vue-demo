@@ -6,7 +6,7 @@
 export default {
     data() {
         return {
-            text: 'hello vue!'
+            text: 'hello vue! 你们好呀！'
         }
     }
 }
