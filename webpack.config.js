@@ -29,6 +29,10 @@ const config = {
                 loader: 'vue-loader'//模块转换器，原内容按需转换为新内容
             },
             {
+                test: /\.jsx$/,
+                loader: 'babel-loader'
+            },
+            {
                 test: /\.css$/,
                 use: [
                   'style-loader',
@@ -40,6 +44,12 @@ const config = {
                 use: [
                     'style-loader',
                     'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
                     'stylus-loader'
                 ]
             },
