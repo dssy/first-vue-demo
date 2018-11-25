@@ -40,7 +40,7 @@ const config = {
                 ]
             },
             {
-                test: /\.styl$/,
+                test: /\.styl(us)?$/,
                 use: [
                     'style-loader',
                     'css-loader',
