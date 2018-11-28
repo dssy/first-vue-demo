@@ -18,11 +18,11 @@ const config = {
     plugins: [//扩展插件，扩展webpack的功能
         new VueLoaderPlugin(),
         new HTMLPlugin(),
-        new webpack.DefinePlugin({
-            'process.env': {
-                Node_ENV: isDev ? '"development"' : '"production"'
-            }
-        })
+        // new webpack.DefinePlugin({
+        //     'process.env': {
+        //         Node_ENV: isDev ? '"development"' : '"production"'
+        //     }
+        // })
     ],
     module: {//webpack中一切皆模块，一个模块对应一个文件
         rules: [
